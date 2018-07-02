@@ -1,6 +1,6 @@
 //Array Creation
 console.log("Array Creation");
-var cars = ['BMW','AUDI','MERCEDES'];
+var cars = ['BMW', 'AUDI', 'MERCEDES'];
 console.log("");
 
 //Array length
@@ -18,8 +18,8 @@ console.log("");
 
 //Traversing Array with foreach
 console.log("Traversing array with foreach");
-cars.forEach(function(item, index, array){
-  console.log(item,index);
+cars.forEach(function(item, index, array) {
+  console.log(item, index);
 });
 console.log("");
 
@@ -53,7 +53,7 @@ console.log("");
 
 //Remove and item by index position
 console.log("Remove  items by index postions");
-var remitem = cars.splice(pos,2);
+var remitem = cars.splice(pos, 2);
 console.log(cars);
 console.log("");
 
@@ -67,7 +67,7 @@ console.log("");
 console.log("Array range");
 //var namelistA = new Array(4294967296);
 var namelistB = [];
-namelistB.length = Math.pow(2,32)-1;
+namelistB.length = Math.pow(2, 32) - 1;
 //var namelistC = new Array(-100);
 //console.log(namelistA.length);
 console.log(namelistB.length);
@@ -86,8 +86,9 @@ console.log("");
 
 //Is Array or not with own function
 console.log("Isarray own function with object prototype");
+
 function isArray(x) {
-    return x.constructor.toString().indexOf("Array") > -1;
+  return x.constructor.toString().indexOf("Array") > -1;
 }
 console.log(isArray(cars));
 console.log("");
@@ -99,7 +100,7 @@ console.log("");
 
 //Sort an Array
 console.log("Sort an Array");
-var cars = new Array('BMW','AUDI','MERCEDES');
+var cars = new Array('BMW', 'AUDI', 'MERCEDES');
 console.log(cars);
 cars.sort();
 console.log(cars);
